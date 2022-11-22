@@ -1,0 +1,51 @@
+Sheet Name:- 1] Global_Superstore
+		->Highlight table 
+		->All basic tables (Measure by dims)
+
+Sheet Name:- 2] Global_Superstore_2
+	             -> Total, Subtotal
+	             -> Stack Graph, with Filters
+	             -> highlight table with Dynamic Title
+	             -> Tree Map with Filter
+	             ->Monthly Measures
+                         -> Top 10 Top 12 by measures
+                         ->Top 10 with (Context filter)
+		 -> Grouping Measures by dimenions group
+	             -> Using SET Top 25 customer/ products Set 
+
+Sheet Name:- 3] Global_Superstore_3
+		-> Dynamic sheet(Create parameter & create New Field)
+		->Dynamic sheets using IF ...ELSE.....End [Sum,AVG, CONT]
+		-> Country filererd by region using No of Products/customer field (COUNTD() Function)
+		->FInding no of days using DATEDIFF function inside crt new field &  attribute  ,average filter
+		->IF Else Conditions with Messages
+		->Finding AVG(Average) Measure (profit) per Product 
+		->COUNT() , COUNTD() Function , Count with Condition	
+		->COUNTD(IF( COndition) THEN [unique key] END)   COunting with condition
+		-> Measures between range using constant line,  True false condition  Answer :-{CountinSUM([Shipping Cost]) >= 75000 AND SUM([Shipping Cost]) <= 125000}
+		
+
+Sheet Name:- 4] Global_Superstore_Bar&Stack Bar
+	          -> Pie diagram
+	         -> Bar graph
+	         -> measure by dimensions
+	         -> Stack bar graph
+	         -> Side by side Graph
+	         -> Discrete Line
+	         -> Continuous Line
+	         -> Quarterly measures(Discrete Lin)
+	        -> Discrete Area
+	        -> Continuous Area 
+	        -> Stacked Circle
+	       -> Side by side Circle
+	       -> Heat Map (Having sale
+	       ->Sub-total , Total
+		
+
+Sheet Name:- 4] Sample Coffee-Chain
+		-> Dual Line (Actual Vs Expected) (Synchronize axis)
+		->Dual Combo(Actual Vs Expected)
+		->Bullet Chart(Swap reference Line)
+
+
+		
