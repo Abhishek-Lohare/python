@@ -17,9 +17,10 @@ Sheet Name:- 3] Global_Superstore_3
 		-> Dynamic sheet(Create parameter & create New Field)
 		->Dynamic sheets using IF ...ELSE.....End [Sum,AVG, CONT]
 		-> Country filererd by region using No of Products/customer field (COUNTD() Function)
-		->FInding no of days using DATEDIFF function inside crt new field &  attribute  ,average filter
+		->FInding no of days using DATEDIFF function inside crt new field &  attribute  ,average filter Sort on order ID 
 		->IF Else Conditions with Messages
 		->Finding AVG(Average) Measure (profit) per Product 
+		-> COUNT(IF [Calculation2] = "LOSS" THEN 1 END) for counting Loss
 		->COUNT() , COUNTD() Function , Count with Condition	
 		->COUNTD(IF( COndition) THEN [unique key] END)   COunting with condition
 		-> Measures between range using constant line,  True false condition  Answer :-{CountinSUM([Shipping Cost]) >= 75000 AND SUM([Shipping Cost]) <= 125000}
