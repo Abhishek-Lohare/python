@@ -19,6 +19,9 @@ Sheet Name:- 3] Global_Superstore_3
 		-> Country filererd by region using No of Products/customer field (COUNTD() Function)
 		->FInding no of days using DATEDIFF function inside crt new field &  attribute  ,average filter Sort on order ID 
 		->IF Else Conditions with Messages
+		->Ranking
+		-> Scatter plot 
+		-> Forecatsing
 		->Finding AVG(Average) Measure (profit) per Product 
 		-> COUNT(IF [Calculation2] = "LOSS" THEN 1 END) for counting Loss
 		-> Shipping Cost b/w 75 k and 125 k? --> SUM([Shipping Cost]) >= 75000 AND SUM([Shipping Cost]) <= 125000
