@@ -21,6 +21,7 @@ Sheet Name:- 3] Global_Superstore_3
 		->IF Else Conditions with Messages
 		->Finding AVG(Average) Measure (profit) per Product 
 		-> COUNT(IF [Calculation2] = "LOSS" THEN 1 END) for counting Loss
+		-> Shipping Cost b/w 75 k and 125 k? --> SUM([Shipping Cost]) >= 75000 AND SUM([Shipping Cost]) <= 125000
 		->COUNT() , COUNTD() Function , Count with Condition	
 		->COUNTD(IF( COndition) THEN [unique key] END)   COunting with condition
 		-> Measures between range using constant line,  True false condition  Answer :-{CountinSUM([Shipping Cost]) >= 75000 AND SUM([Shipping Cost]) <= 125000}
