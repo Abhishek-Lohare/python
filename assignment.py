@@ -409,15 +409,199 @@ import math
 # "India is the fastest-growing economy. India is looking for more investments around the globe. The whole world is looking at India as a great market. "
 # "Most of the Indians can foresee the heights that India is capable of reaching."
 # The output should be 5
-f = open("notes.txt", "r")
-all_in_one = f.read()
-print(all_in_one)
-split_content =[]
-split_content = all_in_one.split(" ")
-word= "the".lower()
-count = 0
-for i in split_content:
-    if i.lower() == word:
-        count+=1
-print(split_content)
-print(f"Count of word:- \"{word}\" is: {count}")
+# f = open("notes.txt", "r")
+# all_in_one = f.read()
+# print(all_in_one)
+# split_content = []
+# split_content = all_in_one.split(" ")
+# word = "the".lower()
+# count = 0
+# for i in split_content:
+#     if i.lower() == word:
+#         count += 1
+# print(split_content)
+# print(f"Count of word:- \"{word}\" is: {count}")
+# ===============================================================================================
+# 16.Write a function display_words() in python to read lines from a text file "notes.txt",
+# and display those words, which are less than 4 characters.
+# f = open("notes.txt", "r")
+# line = f.read()
+# split_content = []
+# split_content = line.split(" ")
+# for i in split_content:
+#     if len(i) < 4:
+#         print(i, end=" ")
+# ===============================================================================================
+# 17. Write a function in Python to count the words "this" and "these" present in a text file "notes.txt".
+# [Note that the words "this" and "these" are complete words]
+# f = open("notes.txt", "r")
+# line = f.read()
+# split_content = []
+# split_content = line.split(" ")
+# count1 = 0
+# count2 = 0
+# for i in split_content:
+#     if i == 'this':
+#         count1 += 1
+#     if i == 'these':
+#         count2 += 1
+# print(f"count of \"this\":  {count1} & count of \'these\' : {count2}")
+# ===============================================================================================
+
+# 18. Write a function in Python to count words in a text file "notes.txt" those are ending with alphabet "e"
+# import re
+
+# f = open("notes.txt", "r")
+#
+# fileread = f.read()
+# count = 0
+# words_ends_with_e =[]
+# for i in fileread.split(" "):
+#     c = re.findall("e$", i)
+#     if c:
+#         count += 1
+#         words_ends_with_e.append(i)
+# print(words_ends_with_e)
+# print("No. of words ending with letter \'e\' : ", count)
+# ===============================================================================================
+# 19. Write a function in Python to count uppercase character in a text file "notes.txt"
+# f = open("notes.txt", "r")
+# count = 0
+# for i in f.read():
+#     if i.isupper():
+#         count += 1
+# print("Total Upper character: ", count)
+# ===============================================================================================
+# 20. Create a text file named "matter.txt.txt" contains some text, which needs to be displayed such
+# that every next character is separated by a symbol "#".
+# Write a function definition for hash_display() in Python that would display the
+# entire content of the file matter.txt.txt in the desired format.
+# Example :
+# If the file matter.txt has the following content stored in it :
+# THE WORLD IS ROUND
+# The function hash_display() should display the following content :
+# T#H#E# #W#O#R#L#D# #I#S# #R#O#U#N#D#
+
+# f = open("matter.txt", "r")
+# for i in f.read():
+#     print(i, end="#")
+# ===============================================================================================
+# 21. Write a function character_A_M_Count() in Python, which should read each character of a text file STORY.TXT.
+# It should count and display the occurance of alphabets A and M (including small cases a and m too).
+# Create a text file STORY.TXT with the below contents:
+# Updated information
+# As simplified by official websites.
+# The character_A_M_Count() function should display the output as:
+# A or a:4
+# M or m :2
+
+# def character_A_M_Count():
+#     f = open("story.txt", "r")
+#     countA, countM = 0, 0
+#     for i in f.read():
+#         if i.lower() == 'a':
+#             countA += 1
+#         if i.lower() == 'm':
+#             countM += 1
+#     print(f"count of A/a is {countA} & count of M/m {countM}")
+#
+#
+# character_A_M_Count()
+# ===============================================================================================
+# 22 : Two numbers are entered through the keyboard.
+# Write a program to find the value of one number raised to the power of another
+# import math
+# def power_fun(a, b):
+#     c = math.pow(a, b)
+#     return c
+# print(f" 1st number raised to 2nd number : ",power_fun(int(input("Enter 1st number: ")), int(input("Enter 2nd number: "))))
+# ===============================================================================================
+# 23 : Write a program to enter the numbers till the user wants and
+# at the end the program should display the largest and smallest numbers entere
+# num_list = []
+# while True:
+#     num1 = int(input("Enter the number: "))
+#     num_list.append(num1)
+#     check = input("Do you want to continue (Y/N) : ").lower()
+#     if check == 'n':
+#         break
+# print(f"largest entered number : {max(num_list)} \nSmallest number is :{min(num_list)}")
+# ===============================================================================================
+# 24 : Write a program with a function that accepts a string from keyboard
+#      and create a new string after converting character of each word capitalized. For instance,
+#      if the sentence is "stop and smell the roses." the output should be "Stop And Smell The Roses"
+
+# str1 = input("Enter the string : ")
+# for i in str1.split(" "):
+#     print(i.capitalize(), end= " ")
+# ===============================================================================================
+# 27: Write a program that keeps student's name and his marks in a dictionary as key-value pairs. The program should store ' \
+# 'records of 10 students and ' display students name and marks of five students in decreasing order of marks obtained.
+# name_lst = ['Abhi', 'a', 'b', 'd', 'df', 'e', 'v', 'oi', 'opi', 'Krish']
+# mark_lst = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+# # for i in range(10):
+# #     name = input("Enter the name of student: ")
+# #     name_lst.append(name)
+# #     marks = int(input("Enter the marks: "))
+# #     mark_lst.append(marks)
+# my_dict = dict(zip(name_lst, mark_lst))
+# # print(sorted(my_dict.items(), key= lambda x:x[1], reverse= True))
+# sort_lst = list(sorted(my_dict.items(), key=lambda x: x[1], reverse=True))[:5]
+# print(sort_lst)
+# ===============================================================================================
+# 28: Write a program that keeps name and birthday in a dictionary as key-value pairs.
+# The program should display a menu that lets the user search a person’s birthday,
+# add a new name and birthday, change an existing birthday, and delete an existing name and birthday
+
+# name_lst = ['Sham', 'Sachin', 'Virendra', 'Rahul', 'Virat']
+# dob_lst = ["12-05-1999", '23-12-1995', '01-01-1991', '01-01-1991', '12-12-2007']
+# dict_rec = dict(zip(name_lst, dob_lst))
+# print(dict_rec)
+
+# 1.add a new name and birthday
+# while True:
+#     name = input("Enter your Name: ")
+#     value = input("Enter the date of Birth: ")
+#     dict_rec[name] = value
+#     check = input("do you want to add more entries (Y/N): ").lower()
+#     if check == 'n':
+#         break
+# print(dict_rec)
+# 2.change an existing birthday
+# name = input("Enter your Name: ")
+# if name in dict_rec.keys():
+#     value = input("Enter the date of Birth: ")
+#     dict_rec[name] = value
+# else:
+#     print("!!!Name is not present in the records!!!")
+# print(dict_rec)
+
+# 3.search a person’s birthday
+# name = input("Enter Name to search for birthday : ")
+# if name in dict_rec.keys():
+#     print(f"Birth date of {name} is {dict_rec[name]}")
+# else:
+#     print("!!!Name is not present in the records!!!")
+
+# 4.delete an existing name and birthday
+# name = input("Enter Name to delete the record: ")
+# if name in dict_rec.keys():
+#     dict_rec.pop(name)
+#     print(f"{name}'s records deleted.")
+# else:
+#     print("!!!Name is not present in the records!!!")
+# print(dict_rec)
+# ===============================================================================================
+# 29 : Write a function that accepts a dictionary as an argument. If the dictionary contains replicate values,
+# return an empty dictionary, otherwise, return a new dictionary whose values are now the keys and whose keys are the values.
+# my_dict= {'a': 1, 'b': 2, 'c': 3, 'e':4,'d':12}
+# def swap_dict(dct):
+#     new_dict = {}
+#     if len(list(my_dict.values())) != len(set(my_dict.values())):
+#         print("Dups values found!!")
+#         return new_dict
+#     else:
+#         new_dict = dict(zip(my_dict.values(),my_dict.keys()))
+#         print(new_dict)
+#
+# swap_dict(my_dict)
